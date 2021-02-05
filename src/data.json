@@ -1,0 +1,15 @@
+{
+    "version": "2.9.2",
+    "branch": "master",
+    "filetostart": "./src/updater.js",
+    "filetostarturl": "https://raw.githubusercontent.com/mrranger/-lfjn-swenfewoihg/master/src/updater.js",
+    "botobjectfile": "./src/controller.js",
+    "mestr": "mrranger",
+    "aboutstr": "This bot was created by RANGERSTUDIO.\nVK: https://vk.com/rangerstudiotm \nSteam: https://steamcommunity.com/id/MrRangerYT/ \nIf you like my work, any donation would be appreciated! https://steamcommunity.com/tradeoffer/new/?partner=838465137&token=CoS9ZQyq",
+    "firststart": true,
+    "compatibilityfeaturedone": false,
+    "whatsnew": "Fixed cooldown calculation bug. Added file integrity checks with backups.",
+    "urlrequestsecretkey": "",
+    "timesloggedin": 0,
+    "totallogintime": 0
+}

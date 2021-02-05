@@ -1,0 +1,19 @@
+{
+    "disableautoupdate": false,
+    "childaccsplaygames": true,
+    "commentdelay": 7500,
+    "allowcommentcmdusage": true,
+    "skipSteamGuard": false,
+    "commentcooldown": 5,
+    "globalcommentcooldown": 90000,
+    "repeatedComments": 2,
+    "unfriendtime": 31,
+    "playinggames": ["!help | RANGERSTUDIO", 730, 4000, 438100, 10, 550650, 240, 218620, 359550],
+    "yourgroup": "https://steamcommunity.com/groups/Luciferof",
+    "botsgroup": "https://steamcommunity.com/groups/RANGERSTUDIO",
+    "acceptgroupinvites": true,
+    "owner": "https://steamcommunity.com/id/MrRangerYT",
+    "ownerid": ["76561198798730865"],
+    "enableevalcmd": true,
+    "enableurltocomment": true
+}
