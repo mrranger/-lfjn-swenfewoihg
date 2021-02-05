@@ -269,12 +269,12 @@ function datajsoncheck() {
     } catch (err) {
         if (err) { //Corrupted!
             readytostart = false //let the interval wait for the recovery to finish
-            releasemode = "master" //Set this real quick to prevent a further error and it will be refreshed after restoring from the backup
+            releasemode = "main" //Set this real quick to prevent a further error and it will be refreshed after restoring from the backup
             logger("data.json seems to have lost it's data/is corrupted. Trying to restore from backup...", true)
     
             fs.writeFile('./src/data.json', JSON.stringify(cache.datajson, null, 2), (err) => { //write last backup to it from cache.json
                 if (err) {
-                    logger("Error writing data to data.json.\nPlease do this manually: Visit https://raw.githubusercontent.com/mrranger/-lfjn-swenfewoihg/master/src/data.json, put everything into the file and save.\nOtherwise the bot will always crash.\nError: " + err + "\n\nAborting...", true); 
+                    logger("Error writing data to data.json.\nPlease do this manually: Visit https://raw.githubusercontent.com/mrranger/-lfjn-swenfewoihg/main/src/data.json, put everything into the file and save.\nOtherwise the bot will always crash.\nError: " + err + "\n\nAborting...", true); 
                     process.exit(0) //abort since writeFile was unable to write and any further execution would crash
     
                 } else {
@@ -313,7 +313,7 @@ function configjsoncheck() {
 
             fs.writeFile('./config.json', JSON.stringify(cache.configjson, null, 2), (err) => { //write last backup to it from cache.json
                 if (err) {
-                    logger("Error writing data to config.json.\nPlease do this manually: Visit https://raw.githubusercontent.com/mrranger/-lfjn-swenfewoihg/master/config.json, put everything into the file and save.\nOtherwise the bot will always crash.\nError: " + err + "\n\nAborting...", true); 
+                    logger("Error writing data to config.json.\nPlease do this manually: Visit https://raw.githubusercontent.com/mrranger/-lfjn-swenfewoihg/main/config.json, put everything into the file and save.\nOtherwise the bot will always crash.\nError: " + err + "\n\nAborting...", true); 
                     process.exit(0) //abort since writeFile was unable to write and any further execution would crash
 
                 } else {
